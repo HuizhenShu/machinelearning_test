@@ -91,7 +91,7 @@ from sklearn.cross_validation import StratifiedShuffleSplit
 # kf = KFold(len(features),5)
 #print features
 
-cv = StratifiedShuffleSplit(labels, 5, random_state = 42)
+cv = StratifiedShuffleSplit(labels, 3, 0.3,0.7,random_state = 42)
 true_negatives = 0
 false_negatives = 0
 true_positives = 0
